@@ -38,43 +38,7 @@ import { AppComponent } from './app.component';
         enabled: true,
       },
     }),
-    ConfigModule.withConfigFactory(defaultCmsContentConfig),
-    B2cStorefrontModule.withConfig({
-      backend: {
-        occ: {baseUrl: 'https://my.occ.server.url',
-          prefix: '/rest/v2/'
-        }
-      },
-      context: {
-        baseSite: ['my-site']
-      },
-      i18n: {
-        resources: translations,
-        chunks: translationChunksConfig,
-        fallbackLang: 'en'
-      },
-      features: {
-        level: '1.2'
-      }
-    }),
-    B2cStorefrontModule.withConfig({
-      backend: {
-        occ: {baseUrl: 'https://localhost:9002',
-          prefix: '/rest/v2/'
-        }
-      },
-      context: {
-        baseSite: ['electronics-spa']
-      },
-      i18n: {
-        resources: translations,
-        chunks: translationChunksConfig,
-        fallbackLang: 'en'
-      },
-      features: {
-        level: '1.2'
-      }
-    })
+    ConfigModule.withConfigFactory(defaultCmsContentConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
