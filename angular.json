@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spartacus-mkt"
+    }
+  },
+  "defaultProject": "spartacus-mkt",
+  "cli": {
+    "analytics": "811d3875-5f25-4c5d-8f42-63388ec53f47"
+  }
 }
